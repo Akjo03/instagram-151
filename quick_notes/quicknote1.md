@@ -4,7 +4,7 @@
 Bootstrap ist ein Open-Source Frontend Framework zur Erstellung von Websiten. Ursprünglich wurde das Framework von Twitter in 2010 entwickelt. Bootstrap enthält responsive Elemente wie z.B. Navigationselemente, Buttons, Grids und weitere Elemente. Bootstrap ist kostenlos und kann ganz einfach von [ihrer Website](https://getbootstrap.com/) oder über [Github](https://github.com/twbs/bootstrap) heruntergeladen werden.
 
 #### 1.1.1 Installation:
-Zuerst muss im Gemfile folgender Eintrag gemacht werden:
+Zuerst muss im Gemfile [folgender Eintrag](https://github.com/Akjo03/instagram-151/blob/94488d9f965bed6888bc1d4f933d3300f9379bf4/Gemfile#L59) gemacht werden:
 ```ruby
 gem 'bootstrap', '~> 4.0.0'
 ```
@@ -13,7 +13,7 @@ Danach kann man im Terminal mit folgendem Kommando das Bootstrap-Gem installiere
 $ bundle install
 ```
 
-Zuletzt konnte ich am Anfang in der Haupt CSS-Datei (app/assets/stylesheets/application.scss) folgenden Eintrag hinzufügen:
+Zuletzt konnte ich am Anfang in der Haupt CSS-Datei (app/assets/stylesheets/application.scss) [folgenden Eintrag](https://github.com/Akjo03/instagram-151/blob/94488d9f965bed6888bc1d4f933d3300f9379bf4/app/assets/stylesheets/application.scss#L16) hinzufügen:
 ```scss
 @import "bootstrap";
 ```
@@ -33,16 +33,34 @@ Hier ein Beispiel mit einer Reihe mit genau zwei Spalten (in der Mitte der Websi
 </div>
 ```
 ##### 1.1.2.2 Navbar:
-Infos zur Navbar
+Bootstrap stellt ein Navbar-Element zur Verfügung, welches fast immer an den Anfang einer Website gestellt wird. Diese kann natürlich (wie alles in Bootstrap) responsiv gebraucht werden. In ihr ethalten sind meistens das Logo der Website, Links zu den verschiedenen Unterseiten (teilweise auch mit Dropdown-Menü) und je nachdem auch einer Suchleiste.
 
+Hier eine gekürtze Version der [Navbar](https://github.com/Akjo03/instagram-151/blob/94488d9f965bed6888bc1d4f933d3300f9379bf4/app/views/shared/_navbar.html.erb#L2-L25) in diesem Instagram-Klon (assets/views/shared/_navbar.html.erb):
+
+```erb
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <%= link_to "Icon", root_path, class: "navbar-brand core-sprite hide-text"%>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Suchleiste -->
+            <ul class="navbar-nav ml-md-auto">
+                <li class="nav-item">
+                    <!-- Link zu einer Unterseite -->
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+```
 #### 1.1.3 Vor- und Nachteile
 ##### 1.1.3.1 Vorteile:
-* asdasdasdd
-* asdasdasdasd
+* Weniger Aufwand für Designs (somit schnelleres entwickeln und mehr Zeit für Design)
+* Mobilfreundlich und Unterstützung für alle bekannten Browser
+* Open-Source und gratis
 
 ##### 1.1.3.2 Nachteile:
-* asdasdasdasd
-* asdasdasdad
+* Langsamere Website und längere Ladezeiten
+* Sehr viele Websiten sehen sehr ähnlich aus
 
 ### 1.2 Authentifikation mit Devise
 Erklärung von Devise
@@ -57,12 +75,10 @@ Infos zu den Views von Devise
 
 #### 1.2.4 Vor- und Nachteile
 ##### 1.2.4.1 Vorteile
-* asdasdasdd
-* asdasdasdasd
+* -
 
 ##### 1.2.4.2 Nachteile:
-* asdasdasdasd
-* asdasdasdad
+* -
 
 ### 1.3 CSS Image-Sprites
 
