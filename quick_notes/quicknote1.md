@@ -35,7 +35,7 @@ Hier ein Beispiel mit einer Reihe mit genau zwei Spalten (in der Mitte der Websi
 ##### 1.1.2.2 Navbar:
 Bootstrap stellt ein Navbar-Element zur Verfügung, welches fast immer an den Anfang einer Website gestellt wird. Diese kann natürlich (wie alles in Bootstrap) responsiv gebraucht werden. In ihr ethalten sind meistens das Logo der Website, Links zu den verschiedenen Unterseiten (teilweise auch mit Dropdown-Menü) und je nachdem auch einer Suchleiste.
 
-Hier eine gekürtze Version der [Navbar](https://github.com/Akjo03/instagram-151/blob/94488d9f965bed6888bc1d4f933d3300f9379bf4/app/views/shared/_navbar.html.erb#L2-L25) in diesem Instagram-Klon (assets/views/shared/_navbar.html.erb):
+Hier eine gekürtze Version der [Navbar](https://github.com/Akjo03/instagram-151/blob/94488d9f965bed6888bc1d4f933d3300f9379bf4/app/views/shared/_navbar.html.erb#L2-L25) in diesem Instagram-Klon (app/assets/views/shared/_navbar.html.erb):
 
 ```erb
 <nav class="navbar navbar-expand-lg navbar-light">
@@ -63,9 +63,38 @@ Hier eine gekürtze Version der [Navbar](https://github.com/Akjo03/instagram-151
 * Sehr viele Websiten sehen sehr ähnlich aus
 
 ### 1.2 Authentifikation mit Devise
-Erklärung von Devise
+Devise ist ein Gem für Ruby on Rails, welche es ermöglicht schnell ein Authentifizierungs-System in eine Rails-Website einzubauen. 
+
 #### 1.2.1 Installation
-Installation
+Um Devise zu installieren musste ich auch im Gemfile einen [neuen Eintrag](https://github.com/Akjo03/instagram-151/blob/fc147ee95b06340002bc5e9a28a3fb38fdae5b16/Gemfile#L58) hinzufügen:
+```ruby
+gem 'devise'
+```
+
+Danach konnte ich wieder mit folgendem Kommando das Gem installieren:
+```bash
+$ bundle install
+```
+...und mit einem weiteren Kommando die Funktionen von Devise installieren:
+```bash
+$ rails generate devise:install
+```
+
+Um die Installation abzuschliessen brauchte es noch 3 weitere Schrite:
+**1.** [Folgender Eintrag](https://github.com/Akjo03/instagram-151/blob/fc147ee95b06340002bc5e9a28a3fb38fdae5b16/config/environments/development.rb#L41) in der Datei "config/environments/development.rb" erstellen:
+```ruby
+config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+```
+**2.** [Folgender Eintrag](https://github.com/Akjo03/instagram-151/blob/fc147ee95b06340002bc5e9a28a3fb38fdae5b16/app/views/layouts/application.html.erb#L14-L15) in der Datei "app/views/layouts/application.html.erb" hinzufügen, um Flash-Messages hinzuzufügen:
+```erb
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+```
+
+**3.** Mit folgendem Kommando die Views von Devise installieren:
+```bash
+$ rails g devise:views
+```
 
 #### 1.2.2 Models
 Infos zu den Models von Devise
@@ -75,10 +104,10 @@ Infos zu den Views von Devise
 
 #### 1.2.4 Vor- und Nachteile
 ##### 1.2.4.1 Vorteile
-* -
+* noch nichts
 
 ##### 1.2.4.2 Nachteile:
-* -
+* noch nichts
 
 ### 1.3 CSS Image-Sprites
 
