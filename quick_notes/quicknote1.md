@@ -1,13 +1,37 @@
 # Quick Note 1
 ## 1 Technologien
 ### 1.1 Bootstrap-Framework:
-Erklärung von Bootstrap
+Bootstrap ist ein Open-Source Frontend Framework zur Erstellung von Websiten. Ursprünglich wurde das Framework von Twitter in 2010 entwickelt. Bootstrap enthält responsive Elemente wie z.B. Navigationselemente, Buttons, Grids und weitere Elemente. Bootstrap ist kostenlos und kann ganz einfach von [ihrer Website](https://getbootstrap.com/) oder über [Github](https://github.com/twbs/bootstrap) heruntergeladen werden.
+
 #### 1.1.1 Installation:
-Installation
+Zuerst muss im Gemfile folgender Eintrag gemacht werden:
+```ruby
+gem 'bootstrap', '~> 4.0.0'
+```
+Danach kann man im Terminal mit folgendem Kommando das Bootstrap-Gem installieren.
+```bash
+$ bundle install
+```
+
+Zuletzt konnte ich am Anfang in der Haupt CSS-Datei (app/assets/stylesheets/application.scss) folgenden Eintrag hinzufügen:
+```scss
+@import "bootstrap";
+```
 #### 1.1.2 Elemente
 ##### 1.1.2.1 Grids:
-Infos zu Grids
+Ein Grid ist ein zwölfspaltiges Layout, welches standardmässig von Bootstrap verwendet wird. Damit responsive Webseiten mit Grids möglich sind werden 4 Grössen zur Verfügung gestellt: Small (sm), Medium (md), Large (lg) und Extra Large (xl).
 
+Hier ein Beispiel mit einer Reihe mit genau zwei Spalten (in der Mitte der Website getrennt):
+```erb
+<div class="row">
+    <div class="col-lg-6 landing-left">
+    	<!-- Code für linke Seite -->
+    </div>
+    <div class="col-lg-6 landing-right">
+        <!-- Code für rechte Seite -->
+    </div>
+</div>
+```
 ##### 1.1.2.2 Navbar:
 Infos zur Navbar
 
