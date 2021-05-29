@@ -7,6 +7,8 @@ import Rails from "@rails/ujs"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import "bootstrap";
+import "@fortawesome/fontawesome-free"
+global.toastr = require("toastr")
 
 Rails.start()
 ActiveStorage.start()

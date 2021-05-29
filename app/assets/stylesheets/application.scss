@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-@import "bootstrap/scss/bootstrap";
+@import "bootstrap";
 
 body {
     background-color: #fafafa;
@@ -36,7 +36,7 @@ body {
 .hide-text {
     display: block;
     overflow: hidden;
-    text-indent: 100%;
+    text-indent: 150%;
     white-space: nowrap;
 }
 
