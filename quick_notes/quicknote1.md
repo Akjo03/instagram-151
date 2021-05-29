@@ -1,7 +1,7 @@
 # Quick Note 1
 ## 1 Technologien
 ### 1.1 Bootstrap-Framework:
-Bootstrap ist ein Open-Source Frontend Framework zur Erstellung von Websiten. Ursprünglich wurde das Framework von Twitter in 2010 entwickelt. Bootstrap enthält responsive Elemente wie z.B. Navigationselemente, Buttons, Grids und weitere Elemente. Bootstrap ist kostenlos und kann ganz einfach von [ihrer Website](https://getbootstrap.com/) oder über [Github](https://github.com/twbs/bootstrap) heruntergeladen werden.
+Bootstrap ist ein Open-Source Frontend Framework zur Erstellung von Websiten. Ursprünglich wurde das Framework von Twitter in 2010 entwickelt. Bootstrap enthält responsive Elemente wie z.B. Navigationselemente, Buttons, Grids und weitere Elemente. Bootstrap ist kostenlos und kann ganz einfach von [ihrer Website](https://getbootstrap.com/), über [Github](https://github.com/twbs/bootstrap) oder direkt als Gem heruntergeladen werden.
 
 #### 1.1.1 Installation:
 Zuerst muss im Gemfile [folgender Eintrag](https://github.com/Akjo03/instagram-151/blob/94488d9f965bed6888bc1d4f933d3300f9379bf4/Gemfile#L59) gemacht werden:
@@ -63,7 +63,7 @@ Hier eine gekürtze Version der [Navbar](https://github.com/Akjo03/instagram-151
 * Sehr viele Websiten sehen sehr ähnlich aus
 
 ### 1.2 Authentifikation mit Devise
-Devise ist ein Gem für Ruby on Rails, welche es ermöglicht schnell ein Authentifizierungs-System in eine Rails-Website einzubauen. 
+Devise ist ein Gem für Ruby on Rails, welche es ermöglicht schnell ein Authentifizierungs-System in eine Rails-Website einzubauen. Devise ist auch Open-Source und kann entweder über [Github](https://github.com/heartcombo/devise) oder direkt als Gem heruntergeladen werden.
 
 #### 1.2.1 Installation
 Um Devise zu installieren musste ich auch im Gemfile einen [neuen Eintrag](https://github.com/Akjo03/instagram-151/blob/fc147ee95b06340002bc5e9a28a3fb38fdae5b16/Gemfile#L58) hinzufügen:
@@ -100,7 +100,7 @@ $ rails g devise:views
 Infos zu den Models von Devise
 
 #### 1.2.3 Views
-Infos zu den Views von Devise
+Bei der Installation von den Devise-Views werden mehrere neue Ordner und Dateien angelegt (hauptsächlich im Ordner "app/views/devise").
 
 #### 1.2.4 Vor- und Nachteile
 ##### 1.2.4.1 Vorteile
@@ -119,8 +119,14 @@ Infos zu den Views von Devise
 
 ## 2 Selbstreflexion
 ### 2.1 Was habe ich gelernt und was wusste ich bereits?
+Vieles konnte ich vom Modul 133 mitnehmen. Daher wusste ich den generellen Aufbau einer Rails-Applikation schon, wusste wie man neue Views, Models, Controllers, etc. erstellt und konnte mich daher recht gut zurechtfinden (Obwohl ich Rails sehr unübersichtlich finde). 
+
+Bootstrap war mir auch schon vorher bekannt und daher auch nichts Neues für mich, jedoch habe ich es bis jetzt nur selten gebraucht und konnte noch einige Dinge darüber lernen. Ich werde mir definitv angewöhnen müssen mehr Bootstrap für meine zukünftigen Web-Projekte zu nutzen.
+
+Devise hingegen kannte ich noch gar nicht und konnte mich nach einiger Zeit recht gut damit anfreunden. Mir gefällt vorallem, dass man sehr schnell eine funktionierende Authorisierung einbauen konnte und werde Devise (wenn ich jemals mit Rails arbeiten werde) definitv wieder gebrauchen.
 
 ### 2.2 Wie bin ich beim Lernen vorgegangen und was waren die Schwierigkeiten?
+
 
 ### 2.3 Was habe ich nicht verstanden?
 
