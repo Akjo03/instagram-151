@@ -125,12 +125,15 @@ Bootstrap war mir auch schon vorher bekannt und daher auch nichts Neues für mic
 
 Devise hingegen kannte ich noch gar nicht und konnte mich nach einiger Zeit recht gut damit anfreunden. Mir gefällt vorallem, dass man sehr schnell eine funktionierende Authorisierung einbauen konnte und werde Devise (wenn ich jemals mit Rails arbeiten werde) definitv wieder gebrauchen.
 
+Partial Views kannte ich bis jetzt auch noch nicht. Das ist eigentlich ein sehr nützliches Feature welches ich sehr gerne bei weiteren Ruby-Projekten verwenden werde. Schade dass diese Funktionalität nicht auch einfach nativ bei HTML / CSS Code zur Verfügung steht.
 ### 2.2 Wie bin ich beim Lernen vorgegangen und was waren die Schwierigkeiten?
-
+Um ganz ehrlich zu sein habe ich recht grosse Schwierigkeiten mit Ruby on Rails, da es mir zu unübersichtlich ist und sehr viel "willkürliches" passiert. Die Syntax von Ruby gefällt mir auch nicht. Es gibt natürlich auch gute Dinge wie z.B. die .erb Dateien welche es sehr einfach ermöglichen mehr Funktionalität in HTML-Dateien zu bringen aber ansonsten ist es für mich sehr schwierig Ruby on Rails zu lernen. Vorallem auch in der Home-Office Lektion konnte ich sehr schlecht Motivation aufbringen um weiter an der Rails-Applikation zu arbeiten, da der Aufbau für mich nicht wirklich Sinn ergibt und ich Mühe habe verschiedene Strukturen miteinander zu verbinden. Die App "Instagram" ist jedoch trotzdem ein sehr cooles Projekt und es macht jedes Mal Freude wieder einen weiteren Schritt nach vorne zu kommen.
 
 ### 2.3 Was habe ich nicht verstanden?
+Das meisste habe ich bis jetzt eigentlich verstanden. Viele Verbindungen sind mir einfach nicht klar ersichtlich (z.B. wieso es jetzt pötzlich es eine "notice"-Variable oder eine "alert"-Variable gibt. Wo ist diese definiert? Was enthält diese genau?). Und leider ist das bei vielen Dingen in Ruby on Rails so und das ist teilweise sehr verwirrend. Die Grundprinzipien habe ich jedoch bis jetzt verstanden.
 
 ### 2.4 Was kann ich beim nächsten Mal verbessern?
+Bin ich mir ehrlich gesagt nicht ganz sicher. Mir fehlt teilweise ein bisschen die Motivation weiter an Ruby zu lernen, da ich mir auch noch nicht ganz so sicher bin für was ich später Ruby alles brauchen kann... (klar für Webseiten aber klare Anwendungsfälle sind mir noch unklar). Ich sollte wahrscheinlich einfach mich besser probieren auf die Arbeit während der Lektion zu konzentieren.
 
 ## 3 Applikation (Dokumentation)
 ### 3.1 Login-View
