@@ -99,7 +99,8 @@ Infos zu den Views von Devise
 
 ## 3 Applikation (Dokumentation)
 ### 3.1 Login-View
-
+![(Bild) Login-View](https://raw.githubusercontent.com/Akjo03/instagram-151/master/quick_notes/login_view_29052021.png)
 ### 3.2 Registrations-View
-
+![Registrations-View](https://raw.githubusercontent.com/Akjo03/instagram-151/master/quick_notes/registration_view_29052021.png)
 ### 3.3 Home-View
+![(Bild) Home-View](https://raw.githubusercontent.com/Akjo03/instagram-151/master/quick_notes/home_view_29052021.png)
