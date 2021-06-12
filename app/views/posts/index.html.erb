@@ -1,0 +1,12 @@
+<%= form_for @post, html: {multipart: true } do |f| %>
+  <%= f.text_field :content , class:  "control-label" %>
+  <%= file_field_tag  "images[]" , type: :file, multiple: true, :required=> 'required'%>
+  <%= f.submit "Post", class: "btn btn-primary"%>
+<% end %>
+
+<% @posts.each do |post| %>
+  <p><%= post.content %></p>
+  <% post.photos.each do |photo| %>
+    <%= image_tag photo.image.url(:standard) %>
+  <% end %>
+<% end %>

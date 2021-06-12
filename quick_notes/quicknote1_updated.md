@@ -100,7 +100,7 @@ $ rails g devise:views
 Infos zu den Models von Devise
 
 #### 1.2.3 Views
-Bei der Installation von den Devise-Views werden mehrere neue Ordner und Dateien angelegt (hauptsächlich im Ordner "app/views/devise").
+Bei der Installation von den Devise-Views werden mehrere neue Ordner und Dateien angelegt (hauptsächlich im Ordner "app/views/devise"). Unter anderem wird 
 
 #### 1.2.4 Vor- und Nachteile
 ##### 1.2.4.1 Vorteile
