@@ -121,7 +121,9 @@ In unserem Instagram-Projekt nutzen wir ein Modal um ein Menü bereitzustellen w
 ```
 
 ## 1.5 Gravatar für Benutzerbilder
+Gravatar ist ein Online-Dienst, der es erlaubt einen persölichen Avatar oder ein Profilbild hochzuladen und diesen mit deiner E-Mail Adresse zu verknüpfen. Gravatar steht übrigens für "Globally Recognized Avatar".
 
+### 1.5.1 Anwendung
 
 ## 1.6 Bilder hochladen mit CarrierWave
 
