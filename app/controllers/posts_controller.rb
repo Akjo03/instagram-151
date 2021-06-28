@@ -3,7 +3,7 @@ class PostsController < ApplicationController
     before_action :find_post, only: [:show, :destroy]
   
     def index
-      @posts = Post.all.limit(10).includes(:photos)
+      @posts = Post.order(id: :desc).limit(10).includes(:photos)
       @post = Post.new
     end
   

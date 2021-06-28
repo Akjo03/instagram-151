@@ -1,0 +1,44 @@
+<% @posts.each do |post| %>
+    <div class="card mt-3 post">
+      <div class="card-header d-flex align-items-center">
+        <%= link_to user_path(post.user), class: "no-text-decoration" do %>
+         <%= image_tag avatar_url(post.user), class: "post-author-icon" %>
+        <%end%>
+        <%= link_to user_path(post.user), class: "normal-color no-text-decoration", title: post.user.name do %>
+          <strong><%= post.user.name %></strong>
+        <%end%>
+        <%= link_to post_path(post), method: :delete, class: "ml-auto" do %>
+          <i class="far fa-trash-alt icon-gray"></i>
+          <%end%>
+      </div>
+
+      <%= render "photos", {post: post} %>
+
+      <div class="card-body">
+        <div class="row actions">
+          <div id="like-icon-post-<%= post.id.to_s %>">
+            <%= render "like_icon", {is_liked: post.is_liked(current_user), post: post} %>
+          </div>
+          <a href="#" class="far fa-comment fa-2x icon-gray icon-spacer"></a>
+          <a href="#" class="far fa-bookmark fa-2x icon-gray ml-auto"></a>
+        </div>
+        <div id="like-text-post-<%= post.id.to_s %>">
+          <%= render "like_text", {likes: post.likes} %>
+        </div>
+        <div>
+          <span><strong><%= post.user.name %></strong></span>
+          <span><%= post.content %></span>
+        </div>
+        <%= link_to time_ago_in_words(post.created_at).upcase + " AGO", post_path(post), class: "light-color post-time no-text-decoration"%>
+        <hr />
+        <div class="row actions">
+          <form action="#" class="w-100">
+          <a href="#" class="far fa-heart fa-2xicon-gray icon-spacer"></a>
+          <a href="#" class="far fa-comment fa-2xicon-gray icon-spacer"></a>
+          <a href="#" class="far fa-bookmark fa-2xicon-gray ml-auto"></a>
+            </textarea></div>
+        </form>
+        </div>
+      </div>
+    </div>
+<%end%>
