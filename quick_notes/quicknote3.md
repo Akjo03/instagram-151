@@ -1,6 +1,6 @@
 # Quick Note 3
 
-**Quick Note 3 ist noch nicht fertig und wird in den nächsten paar Stunden noch vervollständigt.**
+**Die dritte Quick Note ist immer noch nicht ganz fertig aber fast.**
 
 ## 1 Technologien
 
@@ -24,19 +24,19 @@
 
 ### 2.1 Was habe ich gelernt? Was wusste ich bereits?
 
--
+Das Einzige s ich von den "Technologien" schon gekannt habe, war Font-Awesome. Alles andere war für mich bis dahin noch nicht bekannt.
 
 ### 2.2 Wie ich beim Lernen vorgegangen bin
 
--
+Definitv besser als letztes Mal. Ich habe mehr Aufträge während der Lektion erledigt. Das hat mir leider in der letzten Lektion nicht viel geholfen, da ich den ganzen Fortschritt wieder verloren habe.
 
 ### 2.3 Was waren die Schwierigkeiten, wie konnte ich die lösen?
 
--
+Mal davon abgesehen, dass mein ganzer Fortschritt verloren ging, gab es Schiwerigkeiten bei der Implementation der Like-Funktion. Aline konnte mir dann helfen und es hat dann geklappt. Das Problem war, dass in der Routes-Datei das `shallow: true` gefehlt hat.
 
 ### 2.4 Was habe ich nicht verstanden bzw. was konnte ich nicht lösen?
 
--
+Wie genau dass die Like-Funktion im Endeffekt funktioniert bin ich mir immer noch nicht ganz sicher.
 
 ## 3 Selbstreflxion über das ganze Projekt
 
