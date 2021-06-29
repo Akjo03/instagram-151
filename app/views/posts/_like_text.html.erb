@@ -1,0 +1,26 @@
+<div>
+<% if @post.likes.size == 1 %>
+  <div>
+    <strong><%= @post.likes.first.user.name %> likes this </strong>
+  </div>
+<% elsif @post.likes.size == 2%>
+  <div>
+    <strong><%= @post.likes.first.user.name %> and <%= @post.likes.second.user.name %> like this </strong>
+  </div>
+<% elsif @post.likes.size == 3%>
+  <div>
+    <strong><%= likes.first.user.name %>, <%= likes.second.user.name %> and <%= likes.third.user.name%> likes this </strong>
+  </div>
+  <div>
+    <strong><%= @post.likes.first.user.name %>, <%= @post.likes.second.user.name %> and <%= @post.likes.third.user.name%> likes this </strong>
+  </div>
+<% elsif @post.likes.size >= 4%>
+  <div>
+    <strong><%= @post.likes.second_to_last.user.name %>, <%= @post.likes.last.user.name %> and <%= @post.likes.size -2%> others like this </strong>
+  </div>
+<% else %>
+  <div>
+    <strong></strong>
+  </div>
+<% end %>
+</div>

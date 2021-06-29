@@ -1,0 +1,5 @@
+$('#like-icon-post-<%= @post.id.to_s %>').
+  html('<%= link_to "", post_likes_path(@post), method: :post, remote: true, class: "far fa-heart fa-2x icon-gray icon-spacer" %>');
+$('#like-text-post-<%= @post.id.to_s %>').
+  html('<%= j render "posts/like_text", {likes: @post.likes} %>');
+console.log("delete like success");
